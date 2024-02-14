@@ -2832,7 +2832,7 @@ a.btn-title-more {position:relative;display:inline-block; font-size:13px; line-h
 .main-week-data-item-list {height:100%;margin-right:0;overflow-y:auto;overflow-x:hidden;}
 .main-week-data-item-list-inner {padding:21px 12px 24px 12px;} 
 /*
-_:-webkit-full-screen:not(:root:root), .main-week-data-item-list{
+_:-webkit-full-screen:not(:root:root), .guide-week-data-item-list{
   margin-right:-15px;
 }
 */
