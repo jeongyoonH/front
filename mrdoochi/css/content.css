@@ -1,0 +1,447 @@
+@charset "utf-8";
+
+/***********************************************
+sub : 공통
+***********************************************/
+
+/*서브 타이틀*/
+.sub_title {text-align: center;}
+.sub_title h1 {padding-bottom: 10px;}
+
+/*광고주 이름 선택*/
+.company_select select {width: 300px; height: 60px; border: 2px solid #564A9C; margin: 0 auto; display: block; padding-left: 20px; color: #564A9C; font-weight: 500; margin-bottom: 10px; font-size: 18px;}
+.company_select select:hover {border: 2px solid #564A9C !important;}
+
+/*삭제버튼*/
+.clear_round {width: 24px; height: 24px; border-radius: 100%; display: inline-block; vertical-align: middle; text-align: center; line-height: 20px; margin-bottom: 4px; margin-left: 5px;}
+.clear_round i {font-size: 16px; color: #fff;}
+
+
+/***********************************************
+레이어 팝업
+***********************************************/
+
+/*공통*/
+.layer_bg {position:fixed; width:100%; height:100%; background: rgba(0,0,0,0.7); left:0; top:0; z-index: 1;}
+.layer_wrap a.btn_close {position: absolute; top: -40px; right: 0;}
+a.btn_close i {font-size: 36px; color: #fff;}
+
+/*레이어 팝업 : 지도*/
+.layer_wrap.map {position:fixed; width:1000px; height:630px; background:#fff; z-index: 1; border-radius: 15px;}
+.layer_wrap.map .left {width: 400px;}
+.layer_wrap.map .left .title {background: #564A9C; color: #fff; font-size: 18px; text-align: center; padding: 30px 0; border-radius: 15px 0 0 0;}
+.layer_wrap.map .left .search_section {padding: 20px;}
+.layer_wrap.map .left .search_section input[type="text"].form_search {width: 100%; height: 50px; line-height: 50px; background-size: 15px; font-size: 14px; margin-bottom: 0;}
+.layer_wrap.map .left ul,
+.layer_wrap.map .left .no_result {height: 350px; overflow: auto;}
+.layer_wrap.map .left ul li {border-top: 1px solid #DBDBEA; padding: 10px 20px;}
+.layer_wrap.map .left ul li .name {font-size: 18px; color: #222; font-weight: 500;}
+.layer_wrap.map .left ul li .category,
+.layer_wrap.map .left ul li .adr {font-size: 14px;}
+.layer_wrap.map .left .button_list {border-top: 1px solid #DBDBEA; padding: 20px;}
+.layer_wrap.map .left .button_list .desc {font-size: 12px; color: #86829E; padding-top: 5px;}
+.layer_wrap.map .right iframe {border-radius: 0 15px 15px 0;}
+
+/*레이어 팝업 : 지도 결과가 없을 때*/
+.layer_wrap.map .no_result {text-align: center; border-top: 1px solid #DBDBEA; padding: 20px 0; font-size: 14px;}
+
+/*레이어 팝업 : 노출 순위 스크린샷*/
+.layer_wrap.screenshot {position:fixed; width:500px; height:780px; background:#fff; z-index: 1; border-radius: 15px; left: 50% !important; top: 50% !important; margin-left: -250px; margin-top: -390px; text-align: center;}
+.layer_wrap.screenshot p.title {padding-top: 30px; padding-bottom: 3px;}
+.layer_wrap.screenshot .img {margin-top: 20px; padding: 20px 30px 15px 30px; border-top: 1px solid #DBDBEA;}
+.layer_wrap.screenshot .img img {display: inline-block; margin-top: 5px;}
+.layer_wrap.screenshot .pagination ul {padding-top: 0;}
+.layer_wrap.screenshot .pagination ul li a {margin: 0;}
+.layer_wrap.screenshot .pagination ul li a.page-numbers:hover,
+.layer_wrap.screenshot .pagination ul li a.page-numbers:focus,
+.layer_wrap.screenshot .pagination ul li apage-numbers {background: transparent; color: #222; transition: 0.5s ease; border-radius: 100%;}
+
+/*레이어 팝업 : 추가 가능 명단*/
+.layer_wrap.list {position:fixed; width:1200px; height:790px; background:#fff; z-index: 1; border-radius: 15px; left: 50% !important; top: 50% !important; margin-left: -600px; margin-top: -395px; text-align: center; padding: 30px 20px;}
+.layer_wrap.list .popup_title {padding-bottom: 20px;}
+.layer_wrap.list .popup_title .title {font-size: 30px;}
+.layer_wrap.list .popup_title p {font-size: 14px; padding-top: 10px;}
+.layer_wrap.list .people_list {height: 400px; overflow: auto; border-bottom: 1px solid #DBDBEA;}
+.layer_wrap.list .people_list table tr td {height: auto;}
+#direct_input {padding-top: 15px;}
+#direct_input .left {width: 90%; margin: 0 -5px; font-size: 0;}
+#direct_input .form_input {padding: 5px;}
+#direct_input .form_input select,
+#direct_input .form_input input {width: 100%;} 
+#direct_input .right {width: 10%; margin-top: 5px;}
+#direct_input .right button {width: 100%; height: 90px; border-radius: 10px; background: #5168C0; color: #fff; font-size: 14px;}
+#add_popup .button_wrap {margin-top: 30px; padding-bottom: 30px;}
+
+/*레이어 팝업 : 아이디/비밀번호찾기 팝업*/
+.layer_wrap.login_search {position:fixed; width:500px; height:350px; background:#fff; z-index: 1; border-radius: 15px; left: 50% !important; top: 50% !important; margin-left: -250px; margin-top: -175px; text-align: center; padding: 60px;}
+.layer_wrap.login_search p {padding: 20px 0 30px; color: #222;}
+.layer_wrap.login_search .button_wrap {margin-top: 0;}
+
+
+
+/***********************************************
+sub : 광고주 목록
+***********************************************/
+
+/* 광고주 이름 검색 */
+input[type="text"].form_search {width: 300px; height: 60px; border-radius: 15px; border: 2px solid #564A9C; line-height: 60px; margin: 0 auto; display: block; padding-left: 20px; color: #86829E; font-weight: 300; background: url(../images/sub/search_ico.png)no-repeat center right 20px; background-size: 18px; background-color: #fff; margin-bottom: 30px;}
+input[type="text"].form_search:hover {border: 2px solid #564A9C !important;}
+
+
+/* 광고주 목록 필터 */
+.filter > div {display: inline-block;}
+.filter select {height: 50px; display: inline-block;}
+.filter .filter_select select {width: 180px;}
+.filter .add_company {margin-left: 5px;}
+.filter .add_company button a {color: #fff;}
+.filter .add_company button a i {font-size: 20px; vertical-align: middle; position: absolute; right: 15px; top: 15px;}
+.filter .filter_category ul {padding-left: 30px;}
+.filter .filter_category ul li {padding-right: 20px;}
+.filter .filter_category ul li.on,
+.filter .filter_category ul li.on span{font-weight: 700; color: #564A9C;}
+
+/*광고주 목록*/
+.company_list > ul > li {background-color: #fff; margin-top: 20px; box-shadow: 0 0 20px 0 rgba(65,58,110,0.1); position: relative;}
+.company_list ul li .state {display: inline-block; color: #fff; font-size: 14px; width: 35px; padding: 9px 12px; word-break: break-all; position: absolute; left: -35px; top: 10px; border-radius: 10px 0 0 10px; line-height: 1.3;}
+.company_list ul li.consult .state {background: #FF8065;}
+.company_list ul li.progress .state {background: #39A498;}
+.company_list ul li.complete .state {background: #3B4D6C;}
+.company_list .info .adr {padding: 20px 0 5px 0;}
+.company_list .info .desc {padding-bottom: 20px;}
+.company_list .link_button {width: 445px; padding: 28px 0;}
+.company_list .link_button ul {font-size: 0;}
+.company_list .link_button ul li {margin: 4px;}
+.company_list .link_button ul li.off:hover {background: #F3F3F8; border: 1px solid #F3F3F8; transition: 0.5s ease;}
+.company_list .link_button ul li.off:hover a {color:#222; transition: 0.5s ease;}
+.btn_mg.on {background: #F3F3F8; border: 1px solid #F3F3F8;}
+.btn_mg.on a {color: #222; display: block;}
+.btn_mg.off {border: 1px solid #ddd;}
+.btn_mg.off a {color: #aaa; display: block;}
+
+/*광고주 목록 : 모니터링*/
+.company_list .moniter {padding: 40px 0 0 0; margin-top: 30px;}
+.company_list .moniter ul {margin: 0 -15px; font-size: 0; width: 100%;}
+.company_list .moniter ul li {width: 20%; padding: 0 15px; display: inline-block; font-size: 14px; color:#222; text-align: center; vertical-align: middle;}
+.company_list .moniter ul li > div {padding: 20px;}
+.company_list .moniter ul li .num {font-size: 30px;} 
+.company_list .moniter ul li.moniter_button a {display: inline-block; color: #fff; width: 198px; height: 108px; padding: 30px;}
+
+/*광고주 목록 : 페이징*/
+.pagination ul {text-align: center; padding-top: 40px;}
+.pagination ul li {display: inline-block;}
+.pagination ul li a {font-size: 14px; color: #222; margin: 0 5px; vertical-align: middle; display: inline-block; width: 30px; height: 30px; line-height: 30px;}
+.pagination ul li a:hover,
+.pagination ul li a:focus,
+.pagination ul li a.on {background: #564A9C; color: #fff; transition: 0.5s ease; border-radius: 100%;}
+.pagination ul li a.btn_direction{border: 1px solid #564A9C; border-radius: 100%;}
+.pagination ul li a.btn_direction i {color: #564A9C; line-height: 29px;}
+.pagination ul li a.btn_direction:hover i {color: #fff; transition: 1s ease;}
+
+
+/***********************************************
+sub : 광고주 추가
+***********************************************/
+.company_add {margin-top: 20px;}
+.company_add .cont_box2 {padding: 0 10px;}
+#form_add .select_progress {text-align: center; margin-bottom: 20px;}
+#form_add .form_input {font-size: 0; margin: 5px 0; display: inline-block; width: 100%;}
+#form_add .form_input label {width: 90px; display: inline-block; font-size: 14px; text-align: left; vertical-align: middle;}
+#form_add .form_input label.import span::before {display: inline-block; content: "*"; color: #F65555; position: absolute; right: -8px; top: 0;}
+#form_add .form_input input,
+#form_add .form_input textarea {display: inline-block; border: 1px solid #ddd; border-radius: 10px; width: calc(100% - 90px); height: 40px; padding-left: 10px; font-size: 14px;}
+#form_add .form_input textarea {height: 120px; padding: 10px;}
+#form_add .form_input .default {width: 41%; background: #eee;}
+#form_add .form_input .name {margin-right: 9px;}
+#form_add .form_input.radio input[type=radio] {display: none;}
+#form_add .form_input.radio input[type=radio]:checked + label span {background: url(../images/sub/radio_check.png) center no-repeat; background-size: 12px; background-color: #564A9C;}
+#form_add .form_input.radio input[type=radio] + label span{display: inline-block;  width: 20px; height: 20px; border-radius: 5px; border: 1px solid #ddd; vertical-align: middle; cursor: pointer; margin-right: 5px;}
+#form_add .desc {font-size: 14px; padding-left: 90px; color: #86829E; margin-bottom: 5px;}
+#form_add .save input {padding: 0 50px; margin-top: 25px; cursor: pointer;}
+
+
+/***********************************************
+sub : 경쟁사 추출
+***********************************************/
+#competitor > div > .left {width: 690px; padding: 30px; background: #fff; height: 1600px; overflow: auto;}
+#competitor > div > .right > div {width: 490px; padding: 30px; background: #fff;}
+#competitor .title h2 {padding: 5px;}
+#competitor ul.list {padding-top: 20px;}
+#competitor ul.list li .thumb {width: 170px; height: 100px; border-radius: 10px; background: #222; vertical-align: middle; margin-right: 20px;}
+#competitor ul.list > li {padding: 20px 0; border-bottom: 1px solid #DBDBEA;}
+#competitor ul.list > li:last-child {border: none;}
+#competitor ul li .info {vertical-align: middle;}
+#competitor ul li .info h4 i {vertical-align: middle; color: #F65555;}
+#competitor ul li .info h4 i.on {display: none;}
+#competitor ul li .info h4:hover i.on {display: inline-block;}
+#competitor ul li .info h4:hover i.off {display: none;}
+#competitor ul li .info .adr {font-size: 14px; margin-bottom: 10px;}
+#competitor ul li .info ul li {display: inline-block; font-size: 14px; margin-right: 10px;}
+#competitor ul li .info ul li span.title {border: 1px solid #86829E; border-radius: 10px; padding: 3px 10px; color: #86829E; margin-right: 5px; display: inline-block;}
+#competitor button[type="submit"] {width: 100%; margin-top: 20px; color: #fff; text-align: center;}
+#competitor .desc {color: #86829E; text-align: center; font-size: 14px; margin-top: 10px;}
+
+
+/***********************************************
+sub : 상황분석 (마케팅 준비사항)
+***********************************************/
+
+/*공통*/
+#analysis table tr td img {width: 25px; vertical-align: middle; display: inline-block; margin-right: 5px;}
+#analysis table tr td.channel_name {color: #222; font-weight: 500;}
+#analysis table tr td.grade_wrap > div {background: #F3F3F8; border-radius: 100%; width: 56px; height: 56px; margin-right: 5px; color: #86829E; text-align: center; line-height: 1.2; padding: 8px; margin-bottom: 5px;}
+#analysis table tr td.grade_wrap > div.last {margin-right: 0;}
+#analysis table tr td.grade_wrap .grade {font-size: 18px; font-weight: 700; display: block;}
+
+/*인쇄버튼*/
+.print_button {position: fixed; top: 45%; right: 160px;}
+.print_button button {background: #564A9C; border-radius: 15px; color: #fff; font-size: 14px; padding: 10px 20px;}
+.print_button button img {width: 18px; vertical-align: middle; margin-right: 8px;}
+.print_button .print_more ul {padding-top: 5px; opacity: 0;}
+.print_button .print_more ul li a{width: 100%; font-size: 14px; border: 1px solid #564A9C; line-height: 35px; display: inline-block; text-align: center; background: #fff;}
+.print_button .print_more ul li:first-child a {border-bottom: 0; border-radius: 15px 15px 0 0;}
+.print_button .print_more ul li:last-child a {border-radius: 0 0 15px 15px;}
+.print_button .print_more ul li a:hover {background: #564A9C; color: #fff; transition: 0.5s ease;}
+.print_button:hover .print_more ul {opacity: 1; transition: 1s ease;}
+
+/*경쟁사 1,2,3*/
+.marketing_ready ul li .thumb {width: 138px; height: 80px; background: #222; border-radius: 10px; margin-right: 10px;}
+.marketing_ready ul li p.small_title {margin-bottom: 10px;}
+.marketing_ready ul li .info .name span {font-size: 14px; color: #555;}
+.marketing_ready ul li ul.detail {margin-top: 5px;}
+.marketing_ready ul li ul.detail li {font-size: 14px; color: #222; margin-top: 3px;}
+.marketing_ready ul li ul.detail li span.title {border: 1px solid #86829E; border-radius: 10px; padding: 0 10px; color: #86829E; margin-right: 5px; display: inline-block;}
+
+/*경쟁사 채널 정보*/
+.marketing_ready table tr th span {padding: 3px 10px; margin-left: 5px; font-size: 12px; border-radius: 10px;}
+.marketing_ready table tr th span.box01 {background: #564A9C; border: 1px solid #564A9C; color: #fff;}
+.marketing_ready table tr th span.box02 {border: 1px solid #86829E; color: #86829E;}
+.marketing_ready table tr td button {display: block; padding: 10px 20px; font-size: 14px; margin: 0 auto;}
+
+
+/***********************************************
+sub : 상황분석 (상황 분석)
+***********************************************/
+.situation_analysis table tr th img {width: 25px; vertical-align: middle; margin-right: 5px;}
+.situation_analysis table tr td span.box01 {padding: 3px 10px; margin-left: 5px; font-size: 12px; border-radius: 10px; background: #564A9C; border: 1px solid #564A9C; color: #fff;}
+
+
+/***********************************************
+sub : 상황분석 (키워드 분석)
+***********************************************/
+.keyword_analysis h4 span {color: #555; padding-left: 5px; font-size: 16px;}
+.keyword_analysis p.keyword {text-align: center; font-size: 18px; padding-bottom: 20px;}
+.keyword_analysis ul.view {margin: 0 -5px; font-size: 0;}
+.keyword_analysis ul.view li {padding: 0 5px; width: 33.333%;}
+.keyword_analysis .ranking span {padding: 3px 15px; border-radius: 10px; display: inline-block; margin: 5px 10px 5px 0;}
+.keyword_analysis .ranking01 span {border: 1px solid #39A498; color: #39A498;}
+.keyword_analysis .ranking02 span {border: 1px solid #5168C0; color: #5168C0;}
+.keyword_analysis .ranking03 span {border: 1px solid #F65555; color: #F65555;}
+
+
+/***********************************************
+sub : 마케팅 정보
+***********************************************/
+#marketing_info .date form input {background: url(../images/sub/calendar_ico.png)no-repeat left 15px center; background-size: 20px; padding-left: 45px; width: 250px;}
+#marketing_info .date form span {display: inline-block; padding: 0 10px;}
+#marketing_info .date .desc {color: #86829E; padding-top: 5px;}
+.marketing_select h4 span {color: #aaa; padding-left: 5px; font-size: 16px;}
+.marketing_select select {width: 220px; margin-right: 5px;}
+ul.marketing_list {margin-top: 30px;}
+ul.marketing_list li {padding-top: 20px; border-top: 1px solid #DBDBEA; margin-top: 20px;}
+ul.marketing_list li p {padding-bottom: 10px;}
+ul.marketing_list li i {line-height: 1.5;}
+ul.marketing_list .form_input label {font-size: 14px; padding-right: 10px;}
+ul.marketing_list .form_input input {margin-right: 20px;}
+ul.marketing_list .form_input input.keyword {width: 460px;}
+
+
+/***********************************************
+sub : 가이드 수정, 인플루언서 모집 양식 수정
+***********************************************/
+#form_cont .bar_title {background: #564A9C; color: #fff; font-weight: 500; padding: 15px 0; text-align: center; border-radius: 10px;}
+#form_cont ul li {width: 100%; font-size: 0; margin-top: 10px; display: flex;}
+#form_cont ul li .cell {width: 180px; background: #DBDBEA; vertical-align: middle; ; padding: 30px 35px; border-radius: 10px; text-align: center;}
+#form_cont ul li .cell .title {color: #222; font-weight: 500; font-size: 16px;}
+#form_cont ul li .cont {width: calc(100% - 10px);}
+#form_cont ul li .cont textarea { padding: 20px 30px; height: 100%; margin-left: 10px; background: #fff; border-radius: 10px; width: calc(100% - 10px); border: 0; resize: vertical;}
+#form_cont ul li .cont .button_wrap {line-height: 1.8; padding: 34px 30px; height: 100%; margin-left: 10px; background: #fff; border-radius: 10px; margin-top: 0; text-align: left;}
+
+
+/***********************************************
+sub : 인플루언서 신청 양식
+***********************************************/
+#form_apply .admin_defalut .form_input {font-size: 0; margin: 5px 0; display: inline-block; width: 100%;}
+#form_apply .admin_defalut label {font-size: 14px; min-width: 100px; display: inline-block;}
+#form_apply .admin_defalut input {width: calc(100% - 100px); display: inline-block;}
+#form_apply .admin_defalut input.default {background: #eee; text-align: center;}
+#form_apply .admin_defalut ul li {display: inline-block; padding-right: 10px;}
+#form_apply .admin_defalut ul li span{font-size: 14px; width: 190px; height: 40px; line-height: 40px; text-align: center; border: 1px solid #ddd; display: inline-block; border-radius: 10px;}
+#form_apply .admin_defalut ul li.on span{background: #eee;}
+#form_apply .entry {margin-top: 40px; padding-top: 40px; border-top: 1px solid #DBDBEA;}
+#form_apply .entry .form_input {font-size: 0; margin-bottom: 15px; display: inline-block; width: 100%;}
+#form_apply .entry label {font-size: 14px; color: #222; margin-bottom: 5px; display: block; margin-bottom: 3px;}
+#form_apply .entry input {width: 100%;}
+#form_apply .entry .select {margin: 0 -5px;}
+#form_apply .entry .select button {padding: 0 5px; background: transparent;}
+#form_apply .entry .select button span {border: 1px solid #ddd; text-align: center; font-size: 14px; height: 40px; line-height: 40px; border-radius: 10px; display: block; color: #666; font-size: 14px;}
+#form_apply .entry .select button:hover span, 
+#form_apply .entry .select button:focus span {background: #564A9C; color: #fff;}
+#form_apply .entry textarea {width: 100%; resize: vertical;}
+#form_apply .button_wrap {margin-top: 15px;}
+
+
+/***********************************************
+sub : 명단 관리
+***********************************************/
+.people_list table tr td a.progress_check,
+.people_list table tr td a.detail_check {display: inline-block; width: 22px; height: 22px; border: 1px solid #DBDBEA; border-radius: 5px; vertical-align: middle;}
+.people_list table tr td a.progress_check.on,
+.people_list table tr td a.progress_check:hover {background: url(../images/sub/check_ico.png)no-repeat center; background-size: 14px; background-color: #564A9C;}
+.people_list table tr td a.detail_check {background: url(../images/sub/plus_ico.png)no-repeat center; background-size: 13px;}
+.people_list table tr td a.detail_check.on,
+.people_list table tr td a.detail_check:hover {background: url(../images/sub/minus_ico.png)no-repeat center; background-size: 14px; background-color: #564A9C;}
+
+/*명단관리 : 자세히보기*/
+.people_list table tr.detail > td {padding: 20px;}
+.people_list table tr.detail table {width: 65%; float: left;}
+.people_list table tr.detail .keyword {width: 35%; float: right; text-align: left; padding-left: 20px;}
+.people_list table tr.detail .keyword .title {margin-left: 3px; margin-bottom: 5px;}
+.people_list table tr.detail .keyword span {margin: 3px;}
+
+/*명단관리 : 예약날짜*/
+#people_list button.modify {background: #5168C0; font-size: 14px; color: #fff; text-align: center;}
+.people_list table tr td {height: 55px;}
+.people_list table tr td a.date {text-decoration: none; font-size: 14px; color: #555; display: inline-block;}
+.people_list table tr td a.date i {color: #39A498; font-size: 20px; margin-top: -4px; margin-right: 3px; vertical-align: middle;}
+.people_list table tr td a.date.on {background: #39A498; color: #fff; padding: 7px 15px; border-radius: 10px;}
+.people_list table tr td a.date.on i {color: #fff;}
+
+/*명단관리 : 진행여부 취소*/
+.people_list table tr td a.close {width: 22px; height: 22px; background: url(../images/sub/close_ico.png)no-repeat center; background-size: 12px; background-color: #DBDBEA; border-radius: 5px; display: inline-block;}
+.people_list table tr td a.close:hover {background: url(../images/sub/close_ico.png)no-repeat center; background-color: #F65555; background-size: 12px;}
+
+/*명단관리 : 명단추가*/
+.people_add {width: 100%; background: #5168C0; text-align: center; height: 40px; border-radius: 10px; margin-top: 10px;}
+.people_add i {line-height: 40px; }
+
+
+/***********************************************
+sub : 완료 보고서
+***********************************************/
+#report .channel_name img {height: 25px; vertical-align: middle; padding-right: 6px; margin-top: -5px;}
+#report .cont {padding-top: 40px; margin-top: 40px; border-top: 1px solid #DBDBEA;}
+#report .cont01 {margin-top: 20px;}
+#report .cont .title p {padding: 8px 0 20px 0;}
+#report .cont01 ul, #report .cont04 ul {font-size: 0; margin: -5px; padding-bottom: 15px;}
+#report .cont01 ul li, #report .cont04 ul li {width: 50%; padding: 5px;}
+#report .cont01 ul li > div, #report .cont04 ul li > div {background: #fff; border-radius: 15px; box-shadow: 0 0 20px 0 rgba(65,58,110,0.1);}
+#report .cont01 ul li > div span {font-size: 16px; vertical-align: middle;}
+#report .cont01 ul li > div span.num {font-size: 24px; padding-left: 10px;}
+#report .cont02 .keyword .tag{display: inline-block; padding-left: 5px;}
+#report .cont04 ul {padding-top: 20px; padding-bottom: 0;}
+#report .cont05 {text-align: center;}
+#report .cont05 h2 {padding-bottom: 20px;}
+#report .cont05 p {line-height: 1.8; box-shadow: 0 0 20px 0 rgba(65,58,110,0.1);}
+
+
+/***********************************************
+sub : 모니터링
+***********************************************/
+#monitor .left {color: #222;}
+#monitor .right {margin-top: 5px;}
+#monitor table tr td {padding: 10px 5px;}
+#monitor table tr td button{font-size: 14px; width: 68px; padding: 6px 15px; border-radius: 10px;}
+#monitor table tr td button.btn_line {border: 1px solid #564A9C; color: #564A9C; background: transparent;}
+#monitor table tr td a.title {width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: inline-block;}
+#monitor .latest {padding-top: 50px;}
+
+
+/***********************************************
+sub/관리자 : 관리자메인페이지
+***********************************************/
+#admin_main > div {font-size: 0;}
+#admin_main .cont_box3 {vertical-align: middle;}
+#admin_main .cont_box3 > div {text-align: center; padding: 60px 0; min-height: 375px;}
+#admin_main h4 {padding: 30px 0 20px 0;}
+#admin_main .button_wrap {margin-top: 0;}
+
+
+/***********************************************
+sub/관리자 : 대행사 관리
+***********************************************/
+#form_admin {font-size: 0;}
+#form_admin .form_input {font-size: 0; margin-bottom: 15px; display: inline-block; width: 100%;}
+#form_admin label {font-size: 14px; color: #222; margin-bottom: 5px; display: block; margin-bottom: 3px;}
+#form_admin label span {font-size: 12px; color: #86829E; padding-left: 5px;}
+#form_admin input {width: 100%;}
+#form_admin .button_wrap {margin-top: 15px;}
+.admin_table button {font-size: 14px; width: 60px; padding: 6px 15px; border-radius: 10px;}
+
+
+/***********************************************
+sub/관리자 : 이메일 수집
+***********************************************/
+.email_collect #form_admin .cont_box {width: calc(50% - 20px);}
+.email_collect #form_admin span {font-size: 14px; padding: 0 15px; vertical-align: middle;}
+.email_collect .noresult {text-align: center;}
+.email_collect .cont i {display: inline-block; vertical-align: middle;}
+.email_collect .cont .space {padding-top: 40px; margin-top: 40px; border-top: 1px solid #DBDBEA;}
+.email_collect .cont .email_list li {text-align: left; padding-top: 20px; border-top: 1px solid #DBDBEA; margin-top: 20px; }
+.email_collect .cont .email_list li:first-child {padding-top: 0; margin-top: 0; border: 0;}
+
+
+
+@media(max-width:767px)
+{
+    /***********************************************
+    sub : 공통
+    ***********************************************/
+    
+	/*광고주 이름 선택*/
+    .company_select select {width: 300px; max-width: 100%; height: 50px; font-size: 16px;}
+    
+    /***********************************************
+    sub : 가이드 수정, 인플루언서 모집 양식 수정
+    ***********************************************/
+    #form_cont ul li .cell {width: 120px; padding: 20px;}
+    #form_cont ul li .cell .title {font-size: 14px; padding: 10px 0;}
+    #form_cont ul li .cont textarea {padding: 15px 10px;}
+    #form_cont ul li .cont .button_wrap {padding: 15px 10px;}
+    #form_cont ul li .cont .button_wrap button {width: 45%; min-width: auto;}
+    
+    /***********************************************
+    sub : 인플루언서 신청 양식
+    ***********************************************/
+    #form_apply .admin_defalut label {width: 100%; margin-bottom: 3px;}
+    #form_apply .admin_defalut input {width: 100%;}
+    #form_apply .entry .form_input {margin-bottom: 10px;}
+    #form_apply .admin_defalut .form_input ul {width: 100%;}
+    #form_apply .admin_defalut .form_input ul li {width: 50%;}
+    #form_apply .admin_defalut .form_input ul li:last-child {padding-right: 0;}
+    #form_apply .admin_defalut .form_input ul li span {width: 100%;}
+    #form_apply .entry {margin-top: 20px; padding-top: 20px;}
+    #form_apply .entry .select button {width: 50%; padding: 5px;}
+    #form_apply .entry .cont_box2 .select button {padding: 0 5px;}
+    
+    /***********************************************
+    sub : 완료 보고서
+    ***********************************************/
+    #report .cont {padding-top: 20px; margin-top: 20px;}
+    #report .cont .title p {padding-bottom: 10px;}
+    #report .cont01 ul li > div span {font-size: 14px; display: block;}
+    #report .cont01 ul li > div span.num {padding-left: 0; font-size: 20px;}
+    #report .cont02 .keyword .tag {padding-left: 0; padding-top: 5px;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

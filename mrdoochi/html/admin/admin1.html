@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0, minimum-scale=1.0,user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="mr.doochi" />
+    <meta name="author" content="mr.doochi" />
+    <meta name="keywords" content="mr.doochi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="mr.doochi" />
+    <meta property="og:url" content="http://www.mrdoochi.com/" />
+    <meta name="description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    
+    <title>mr.doochi</title>
+    
+    <link rel= "stylesheet" type="text/css" href="../../css/basic.css">
+    <link rel= "stylesheet" type="text/css" href="../../css/layout.css">
+    <link rel= "stylesheet" type="text/css" href="../../css/main.css">
+    <link rel= "stylesheet" type="text/css" href="../../css/content.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    
+</head>
+<body>
+    
+    <!--header-->
+    <header class="bg_white login">
+        <div class="container cf">
+            <h1 class="left"><a href="../index.html" class="dpib"><img src="../../images/layout/header_logo.png" alt="미스터두치 로고"></a></h1>
+            <div class="right">
+                <div class="ientity">
+                <a href="#none"><img src="../../images/layout/login_ico.png" alt="계정이미지">admin 님</a>
+                </div>
+                <a href="#none" class="button">로그아웃</a>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    
+    <!--content-->
+    <div class="container pd_container">
+        <!--페이지 타이틀-->
+        <div class="sub_title">
+            <h1>대행사 관리</h1>
+            <p>대행사와 직원들을 관리하고 추가할 수 있습니다.</p>
+        </div>
+        <!--//페이지 타이틀-->
+        
+        <!--탭-->
+        <ul class="tab pdt_50">
+            <li class="on"><a href="#none">마케팅 대행사 관리</a></li>
+            <li><a href="#none">직원 관리</a></li>
+        </ul>
+        <!--//탭-->
+        
+        <div class="pdt_20">
+            <form id="form_admin" class="br15 bg_white pd_box02">
+                <div class="cont_box2 left dpib pdlr_10">
+                    <div class="form_input">
+                        <label>회사이름</label>
+                        <input name="name" type="text" placeholder="회사이름을 입력하세요">
+                    </div>
+                    <div class="form_input">
+                        <label>아이디 <span>6자리 이상, 특수문자 불가</span></label>
+                        <input name="id" type="text" placeholder="아이디를 입력하세요">
+                    </div>
+                    <div class="form_input">
+                        <label>연락처</label>
+                        <input name="tel" type="text" placeholder="연락처를 입력하세요">
+                    </div>
+                </div>
+                <div class="cont_box2 left dpib pdlr_10">
+                    <div class="form_input">
+                        <label>이메일</label>
+                        <input name="email" type="text" placeholder="이메일을 입력하세요">
+                    </div>
+                    <div class="form_input">
+                        <label>패스워드 <span>6자리 이상</span></label>
+                        <input name="email" type="text" placeholder="패스워드를 입력하세요">
+                    </div>
+                    <div class="form_input">
+                        <label>닉네임</label>
+                        <input name="email" type="text" placeholder="닉네임을 입력하세요">
+                    </div>
+                </div>
+                <div class="form_input dpib cont_box3 pdlr_10">
+                    <label>총 캠페인 수</label>
+                    <input name="email" type="text" placeholder="">
+                </div>
+                <div class="form_input dpib cont_box3 pdlr_10">
+                    <label>진행중인 캠페인 수</label>
+                    <input name="email" type="text" placeholder="">
+                </div>
+                <div class="form_input dpib cont_box3 pdlr_10">
+                    <label>총 모집한 인플루언서</label>
+                    <input name="email" type="text" placeholder="">
+                </div>
+                <!--저장버튼-->
+                <div class="button_wrap">
+                    <button class="button01" type="submit">추가</button>
+                </div>
+                <!--//저장버튼-->
+            </form>
+        </div>
+               
+        <!--표-->
+        <div class="pdt_50 admin_table">
+            <table class="basic table02" style="border-collapse: 0; width: 100%"> 
+                <colgroup>
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                        <col width="auto" />
+                    </colgroup>
+                <tr class="th">
+                    <th>No</th>
+                    <th>회사이름</th>
+                    <th>이메일</th>
+                    <th>아이디</th>
+                    <th>패스워드</th>
+                    <th>연락처</th>
+                    <th>닉네임</th>
+                    <th>총 캠페인 수</th>
+                    <th>진행중인 캠페인 수</th>
+                    <th>총 모집한 인플루언서</th>
+                    <th>수정 및 삭제</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>뷰하다</td>
+                    <td>abcd@naver.com</td>
+                    <td>magpass</td>
+                    <td>123456</td>
+                    <td>010-1234-5678</td>
+                    <td>마케터 12</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>60</td>
+                    <td>
+                       <button class="bg_green fc_white br10">수정</button>
+                       <button class="bg_blue fc_white br10">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>뷰하다</td>
+                    <td>abcd@naver.com</td>
+                    <td>magpass</td>
+                    <td>123456</td>
+                    <td>010-1234-5678</td>
+                    <td>마케터 12</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>60</td>
+                    <td>
+                       <button class="bg_green fc_white br10">수정</button>
+                       <button class="bg_blue fc_white br10">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>뷰하다</td>
+                    <td>abcd@naver.com</td>
+                    <td>magpass</td>
+                    <td>123456</td>
+                    <td>010-1234-5678</td>
+                    <td>마케터 12</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>60</td>
+                    <td>
+                       <button class="bg_green fc_white br10">수정</button>
+                       <button class="bg_blue fc_white br10">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>뷰하다</td>
+                    <td>abcd@naver.com</td>
+                    <td>magpass</td>
+                    <td>123456</td>
+                    <td>010-1234-5678</td>
+                    <td>마케터 12</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>60</td>
+                    <td>
+                       <button class="bg_green fc_white br10">수정</button>
+                       <button class="bg_blue fc_white br10">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>뷰하다</td>
+                    <td>abcd@naver.com</td>
+                    <td>magpass</td>
+                    <td>123456</td>
+                    <td>010-1234-5678</td>
+                    <td>마케터 12</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>60</td>
+                    <td>
+                       <button class="bg_green fc_white br10">수정</button>
+                       <button class="bg_blue fc_white br10">삭제</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--//표--> 
+                
+    </div>
+    <!--//content-->
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <span class="fc_white">회사</span> 진격의 형제들<span class="bar">|</span><span class="fc_white">대표자</span> 손윤호<br />
+            <span class="fc_white">주소</span> 부산광역시 남구 전포대로 133, 3617호<br />
+            <span class="fc_white">사업자등록번호</span> 409-69-00335<br />
+            <span class="fc_white">고객센터</span> 1544-7409<span class="bar">|</span><span class="fc_white">이메일 문의</span> viewhada@naver.com<br />
+            <span class="fc_white">뷰하다</span> www.viewhada.com
+        </div>
+    </footer>
+    <!--//footer-->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

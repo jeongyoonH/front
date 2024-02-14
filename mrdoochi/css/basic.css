@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;600&display=swap');
+
+/* 전체 속성 지정 */
+* {font-style:normal; font-family:'Noto Sans KR', '맑은 고딕', Arial, '돋움', dotum, AppleGothic, sans-serif; font-weight: 300;}
+*::selection {background:#564A9C; color:#fff;}
+*::-moz-selection {background:#564A9C; color:#fff;}
+* {margin:0; padding:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+img {margin:0; border:0;}
+ul {list-style:none;}
+ul li{list-style:none; margin:0; padding:0;}
+
+/* form */
+input, button, textarea, select, form, fieldset {border-radius:0; border:none; -webkit-appearance:none; -webkit-box-sizing:border-box; vertical-align:middle;}
+input[type='radio'] {-webkit-appearance:radio;}
+input[type='checkbox'] {-webkit-appearance:checkbox;}
+input, button, textarea {font-size:16px; line-height:1.2; font-family:'Noto Sans KR', '맑은 고딕', Arial, '돋움', dotum, AppleGothic, sans-serif;}
+select {background-image:url(../images/sub/select_ico.png); background-position:right 15px center; background-repeat:no-repeat; background-size: 12px; -moz-appearance:none; -webkit-appearance:none; appearance:none; min-width: 140px; font-size: 14px; color: #86829E; font-weight: 300; border: 1px solid #ddd;}
+select::-ms-expand{display:none;}
+
+html, body, div, p {margin:0; padding:0;}
+body {-webkit-text-size-adjust: 100%; margin:0; padding:0; font-size:16px; font-weight: 300; line-height:1.5; letter-spacing: -0.5px; color:#555; font-family:'Noto Sans KR', '맑은 고딕', Arial, '돋움', dotum, AppleGothic, sans-serif; word-break:keep-all; background-color: #F3F3F8;}
+h1, h2 {line-height:1.2; font-weight:600; margin:0; padding:0; color:#222; letter-spacing:-2px;}
+h3, h4, h5, h6 {line-height:1.5; font-weight:600; margin:0; padding:0; color:#222; letter-spacing:-1px;}
+sup, sub {font-size:12px;}
+hr {display: none;}
+table, pre {font-size:14px;}
+table {border-collapse:0; border-spacing:0;} 
+th {color:#222; font-size: 14px;}
+td {color:#555; font-size: 14px;}
+a, a:link {text-decoration:none; color:#555;} /* cursor: pointer; 안씀.. a태그에 href 없어도 손모양 커서 나오므로  */
+a:visited {text-decoration:none; color:#555; }
+/*a:hover, a:active, a:focus {color: #564A9C; -webkit-transition: background-color 0.5s ease, color 0.5s ease; -moz-transition: background-color 0.5s ease, color 0.5s ease; -o-transition: background-color 0.5s ease, color 0.5s ease; -ms-transition: background-color 0.5s ease, color 0.5s ease;}*/
+pre /* 형식 유지 컨텐츠 자동개행 */
+{
+white-space: pre-line; /* css3 */
+white-space: -moz-pre-wrap; /* Mozilla, since1999 */
+white-space: -pre-wrap; /* Op4-6 */
+white-space: -o-pre-wrap; /* Op7 */
+word-break: break-word;
+word-wrap: break-word; /* IE 5.5+ */
+}
+
+
+@media(max-width:767px)
+{
+    body {font-size: 14px;}
+}

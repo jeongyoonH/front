@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+/***********************************************
+container
+***********************************************/
+.container {width: 1200px; margin: 0 auto; position: relative;}
+
+
+/***********************************************
+배경 모음
+***********************************************/
+.bg_white {background-color:#fff;}
+.bg_purple {background-color:#564A9C;}
+.bg_red {background-color: #F65555;}
+.bg_green {background-color: #39A498;}
+.bg_blue {background-color: #5168C0;}
+
+
+/***********************************************
+폰트
+***********************************************/
+
+/* 폰트설정 ( 사이즈) */
+h1 {font-size:34px;}
+h2 {font-size:24px;}
+h3 {font-size:22px; font-weight: 500;}
+h4 {font-size:20px;}
+.fs12 {font-size:12px;}
+.fs14 {font-size:14px;}
+.fs16 {font-size:16px;}
+.fs18 {font-size:18px;}
+.fwb {font-weight:700;}
+.fwm {font-weight:500;}
+.fwn {font-weight:300;}
+
+/* 폰트설정 ( 색상) */
+.fc_black {color:#222 !important;}
+.fc_white {color:#fff;}
+.fc_555 {color:#555;}
+.fc_aaa {color:#aaa !important;}
+.fc_purple {color:#564A9C;}
+.fc_green {color:#39A498;}
+.fc_red {color:#F65555;}
+
+/* 폰트설정 ( 스타일) */
+.underline {text-decoration:underline;}
+
+/*자간*/
+.ls_0 {letter-spacing: -0.5px;}
+.ls_1 {letter-spacing: -1px;}
+
+/*행간*/
+.lh_1 {line-height:1;}
+.lh_2 {line-height:2;}
+.text_break {word-break: break-all;}
+
+/*selection*/
+div::selection {background:#564A9C; color:#fff;}
+p::selection {background:#564A9C; color:#fff;}
+li::selection {background:#564A9C; color:#fff;}
+h2::selection {background:#564A9C; color:#fff;}
+h3::selection {background:#564A9C; color:#fff;}
+
+
+/***********************************************
+컨텐츠박스
+***********************************************/
+
+/* 레이아웃(컨텐츠박스) */
+.cont_box2 {width:50% !important;}
+.cont_box3 {width:33.3333% !important;}
+.cont_box4 {width:25%;}
+.cont_box6 {width:16.6666%;}
+
+/* 높이 */
+.h_100p {height:100%;}
+.h_inherit {height: inherit;}
+
+/* 디스플레이 정의 */
+.dpb {display: block;}
+.dpi {display: inline;}
+.dpib {display: inline-block;}
+.dpn {display: none;}
+.mdpb {display: none !important;} /*모바일에서만 보이게*/
+.mdpib {display:none !important;}
+
+
+/***********************************************
+정렬
+***********************************************/
+
+/* 정렬 */
+.table {display:table}
+.cell {display:table-cell}
+
+.div_center {margin:0 auto;}
+
+.tac {text-align:center;}
+.tal {text-align:left !important;}
+.tar {text-align:right;}
+.tavt {vertical-align:top;}
+.tavm {vertical-align:middle !important;}
+.tavb {vertical-align:bottom;}
+
+.right {float:right;}
+.left {float:left;}
+
+/*위치*/
+.re {position: relative;}
+.ab {position: absolute;}
+
+/*margin*/
+.mgt_20 {margin-top: 20px;}
+.mglr_m10 {margin-left: -10px; margin-right: -10px;}
+
+/*padding*/
+.pdb_5 {padding-bottom: 5px;}
+.pdb_15 {padding-bottom: 15px;}
+.pdb_20 {padding-bottom: 20px;}
+.pdt_20 {padding-top: 20px;}
+.pdt_30 {padding-top: 30px;}
+.pdt_50 {padding-top: 50px;}
+.pdlr_10 {padding-left: 10px; padding-right: 10px;}
+.pd_box01 {padding: 40px 30px;}
+.pd_box02 {padding: 40px;}
+.pd_box03 {padding: 30px;}
+.pd_box04 {padding: 20px;}
+.pd_container {padding: 80px 0;}
+
+/***********************************************
+기타
+***********************************************/
+
+/*border*/
+.border {border: 1px solid #DBDBEA; box-sizing: border-box;}
+.border_b {border-bottom: 1px solid #DBDBEA;}
+.border_r {border-right: 1px solid #DBDBEA;}
+.border_l {border-left: 1px solid #DBDBEA;}
+.border_t {border-top: 1px solid #DBDBEA;}
+.br10 {border-radius: 10px;}
+.br15 {border-radius: 15px;}
+
+/*blut 블릿*/
+.blut {position: relative;padding-left:15px;}
+.blut::before {content: ""; width: 3px; height: 3px; position: absolute; left: 0; top: 10px; background-color: #564A9C;}
+
+/*기타 */
+.clear {clear:both;}
+.cf::after {clear: both; display: block; content: "";}
+.hand {cursor:pointer}
+.mar_dpb {display: block; margin: 0 auto;}
+
+
+/***********************************************
+버튼
+***********************************************/
+button {cursor: pointer;}
+.btn_lg {height: 50px; min-width: 140px; font-size: 14px; padding: 15px; position: relative; text-align: left;}
+.btn_mg {height: 40px; min-width: 140px; line-height: 40px; font-size: 14px; border-radius: 10px; text-align: center;}
+
+/*키워드 태그*/
+.tag span{font-size: 14px; border: 1px solid #86829E; color: #86829E; padding: 5px 15px; text-align: center; margin-right: 5px; border-radius: 15px; display: inline-block; background-color: #fff;}
+
+/*버튼요소*/
+.button_list button {height: 40px; border-radius: 10px; font-size: 14px; padding: 10px 20px; margin-right: 10px; cursor: pointer;}
+.button_list .button01 {border: 1px solid #ddd; background: #fff; color: #aaa;}
+.button_list .button02 {background: #F3F3F8; color: #222;}
+.button_list .button03 {background: #564A9C; color: #fff; margin-right: 0; padding: 10px 32px;}
+
+/*최종저장버튼*/
+.button_wrap {text-align: center; margin-top: 50px;}
+.button_wrap button {min-width: 160px; padding: 0 20px; height: 40px; border-radius: 10px; display: inline-block; font-size: 14px; margin: 0 3px;}
+.button_wrap .button01 {background: #564A9C; color: #fff;}
+.button_wrap .button02 {background: #5168C0; color: #fff;}
+
+
+/***********************************************
+탭메뉴
+***********************************************/
+ul.tab {font-size: 0;}
+ul.tab li {display: inline-block;}
+ul.tab li a {font-size: 14px; line-height: 50px; background: #fff;text-align: center; display: inline-block; width: 200px; border: 1px solid #DBDBEA; border-right: none;}
+ul.tab li:first-child a {border-radius: 10px 0 0 10px;}
+ul.tab li:last-child a {border-right: 1px solid #DBDBEA; border-radius: 0 10px 10px 0;}
+ul.tab li.on a,
+ul.tab li a:hover,
+ul.tab li a:focus {background: #564A9C; border: 1px solid #564A9C; color: #fff; transition: 0.5s ease;}
+
+
+/***********************************************
+table
+***********************************************/ 
+table.basic {border-radius: 15px; }
+table.basic tr.th th:first-child {border-radius: 10px 0 0 0;}
+table.basic tr.th th:last-child {border-radius: 0 10px 0 0;}
+table.basic tr td {min-height: 55px; border-bottom: 1px solid #DBDBEA; border-right: 1px solid #DBDBEA; padding: 20px; text-align: center;}
+table.basic tr td:first-child {border-left: 1px solid #DBDBEA;}
+table.basic tr:last-child td:first-child {border-radius: 0 0 0 10px;}
+table.basic tr:last-child td:last-child {border-radius: 0 0 10px 0;}
+table.basic tr td a {color: #5168C0; text-decoration: underline;}
+
+table.basic.table02 th {background: #DBDBEA; border-top: 1px solid #DBDBEA; border-bottom: 1px solid #DBDBEA; height: 55px; font-weight: 500; border-right: 1px solid #fff; padding: 0 10px;}
+table.basic.table02 th:last-child {border-right: 1px solid #DBDBEA;}
+table.basic.table02 td {background: #fff; padding: 10px;}
+table.basic.table01 th {background: #F3F3F8; border-top: 1px solid #DBDBEA; border-bottom: 1px solid #DBDBEA; height: 55px; font-weight: 500; border-right: 1px solid #DBDBEA;}
+table.basic.table01 th:first-child {border-left: 1px solid #DBDBEA;}
+
+
+/*th가 rowspan이나 colspan을 사용했을 때*/
+table.basic tr.th td {border-radius: 0 !important; background: #F3F3F8; border-left: 0; text-align: center; font-weight: 500; color: #222;}
+table.basic tr.br0 td {border-radius: 0 !important; border-left: 0;}
+
+
+/***********************************************
+form
+***********************************************/
+input, textarea {height: 40px; border: 1px solid #ddd; border-radius: 10px; padding-left: 15px; font-size: 14px; line-height: 1.5;}
+input:hover, textarea:hover, select:hover {border: 1px solid #564A9C !important; transition: 0.8s ease;}
+input.default:hover {border: 1px solid #ddd !important;}
+select {height: 40px; padding: 0 0 0 15px;;}
+
+
+/***********************************************
+레이아웃(헤더)
+***********************************************/
+
+/*공통*/
+header {width:100%; height:80px;}
+header h1 a img {height: 32px; margin: 24px 0;}
+header .right {float: right;}
+
+/*로그아웃 형태*/
+header .right a.button {border-radius: 20px; padding: 10px 30px; background: #564A9C; color: #fff; font-size: 14px; margin-top: 18px; display: inline-block;}
+header .right a.button:hover {transition: 0.5s ease; box-shadow: 0 0 20px 0 rgba(65,58,110,0.4);}
+
+/*로그인 형태*/
+header .right .ientity {display: inline-block; vertical-align: middle; padding-right: 20px;}
+header .right .ientity img {height: 36px; vertical-align: middle; padding-right: 10px;}
+
+
+/***********************************************
+레이아웃(푸터)
+***********************************************/
+footer {background: #2B2A31; font-size:14px; color:#aaa; margin:0; padding:50px 0; text-align: center; line-height: 1.7;}
+footer .bar {margin: 0 8px;}
+
+
+
+
+@media(max-width:767px)
+{
+    .container {width: 100%; padding-left: 15px; padding-right: 15px; margin: 0 auto; position: relative;}
+    
+    /* 레이아웃(컨텐츠박스) */
+    .cont_box2 {width:100%;}
+    
+    /*margin*/
+    .mglr_m10 {margin-left: -5px; margin-right: -5px;}
+    
+    /*padding*/
+    .pdt_50 {padding-top: 30px;}
+    .pdlr_10 {padding-left: 5px; padding-right: 5px;}
+    .pd_box02 {padding: 30px 20px;}
+    .pd_box03 {padding: 20px;}
+    .pd_container {padding-top: 50px; padding-bottom: 50px;}
+    
+    /* 폰트설정 ( 사이즈) */
+    h1 {font-size:28px;}
+    h2 {font-size:18px;}
+    h3 {font-size:18px;}
+    h4 {font-size:26px;}
+    
+    /*최종저장버튼*/
+    .button_wrap {margin-top: 30px;}
+    
+    /***********************************************
+    탭메뉴
+    ***********************************************/
+    ul.tab {width: 100%;}
+    ul.tab li {width: 33.333%;}
+    ul.tab li a {width: 100%;}
+    
+    /***********************************************
+    table
+    ***********************************************/ 
+    .table_box {overflow-x: auto;}
+    .table_box table {table-layout: auto;}
+    .desc_scroll {font-size: 12px; color: #86829E; position: relative; padding-left: 10px; margin-top: 5px;}
+    .desc_scroll::before {content: ""; position: absolute; left: 0; width: 5px; height: 5px; border-radius: 50%; background-color: #564A9C; top: 7px;}
+    table.basic.table02 td {padding: 10px 5px;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

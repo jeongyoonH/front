@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0, minimum-scale=1.0,user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="mr.doochi" />
+    <meta name="author" content="mr.doochi" />
+    <meta name="keywords" content="mr.doochi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="mr.doochi" />
+    <meta property="og:url" content="http://www.mrdoochi.com/" />
+    <meta name="description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    
+    <title>mr.doochi</title>
+    
+    <link rel= "stylesheet" type="text/css" href="../../css/basic.css">
+    <link rel= "stylesheet" type="text/css" href="../../css/layout.css">
+    <link rel= "stylesheet" type="text/css" href="../../css/main.css">
+    <link rel= "stylesheet" type="text/css" href="../../css/content.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    
+</head>
+<body>
+    
+    <!--header-->
+    <header class="bg_white login">
+        <div class="container cf">
+            <h1 class="left"><a href="../index.html" class="dpib"><img src="../../images/layout/header_logo.png" alt="미스터두치 로고"></a></h1>
+            <div class="right">
+                <div class="ientity">
+                <a href="#none"><img src="../../images/layout/login_ico.png" alt="계정이미지">admin 님</a>
+                </div>
+                <a href="#none" class="button">로그아웃</a>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    
+    <!--content-->
+    <div class="container pd_container email_collect">
+        <!--페이지 타이틀-->
+        <div class="sub_title">
+            <h1>이메일 수집</h1>
+        </div>
+        <!--//페이지 타이틀-->
+        
+        <div class="cont pdt_50">
+            <h2>카페 수집기</h2>
+            <div class="pd_box01 bg_white br15 mgt_20">
+                <form id="form_admin" class="br15 bg_white">
+                    <div class="mglr_m10">
+                        <div class="form_input dpib cont_box2 pdlr_10">
+                            <label>네이버 아이디</label>
+                            <input name="email" type="text" placeholder="네이버 아이디를 입력하세요">
+                        </div>
+                        <div class="form_input dpib cont_box2 pdlr_10">
+                            <label>네이버 비밀번호</label>
+                            <input name="email" type="text" placeholder="네이버 비밀번호를 입력하세요">
+                        </div>
+                        <div class="form_input dpib cont_box2 pdlr_10">
+                            <label>카페URL</label>
+                            <input name="email" type="text" placeholder="URL을 입력하세요">
+                        </div>
+                        <div class="form_input dpib cont_box2 pdlr_10">
+                            <label>페이지 수</label>
+                            <input name="page_start" type="text" placeholder="페이지 시작" class="cont_box">
+                            <span>~</span>
+                            <input name="page_last" type="text" placeholder="페이지 끝" class="cont_box">
+                        </div>
+                    </div>
+                    <!--저장버튼-->
+                    <div class="button_wrap">
+                        <button class="button01" type="submit">카페 수집하기</button>
+                    </div>
+                    <!--//저장버튼-->
+                </form>
+            </div>
+        </div>
+        
+        <div class="cont pdt_50">
+            <h2>블로그 수집기</h2>
+            <div class="pd_box01 bg_white br15 mgt_20">
+                <form id="form_admin" class="br15 bg_white">
+                    <div class="form_input dpib">
+                        <label>키워드</label>
+                        <input name="keyword" type="text" placeholder="‘,’로 구분해주세요">
+                    </div>
+                    <div class="form_input dpib">
+                        <label>개수</label>
+                        <input name="number" type="text" placeholder="개수를 입력하세요 (기본 5페이지)">
+                    </div>
+                    <!--저장버튼-->
+                    <div class="button_wrap">
+                        <button class="button01" type="submit">블로그 수집하기</button>
+                    </div>
+                    <!--//저장버튼-->
+                </form>
+            </div>
+        </div>
+        
+        <div class="cont pdt_50">
+            <h2>이메일 수집 현황 <span class="number fc_purple fwb">총 5개</span></h2>
+            <div class="pd_box01 bg_white br15 mgt_20">
+                <ul class="email_list">
+                    <li>harimcha@naver.com</li>
+                    <li>q0163020@naver.com</li>
+                    <li>crazy_yuri@naver.com</li>
+                    <li>a1632@naver.com</li>
+                    <li>mi_sun_love@naver.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--저장버튼-->
+        <div class="button_wrap">
+            <button class="button01" type="submit">복사하기</button>
+            <button class="button02">엑셀 다운로드</button>
+        </div>
+        <!--//저장버튼-->
+        
+        <div class="cont pdt_50">
+            <div class="pd_box01 bg_white br15">
+                <h4 class="fc_purple pdb_15">이메일 복사하기</h4>
+                <p>harimcha@naver.com, q0163020@naver.com, crazy_yuri@naver.com, a1632@naver.com, mi_sun_love@naver.com</p>
+            </div>
+        </div>
+        
+        <div class="cont pdt_50">
+            <h2>이메일 자동화</h2>
+            <div class="pd_box01 bg_white br15 mgt_20">
+                <h4 class="fc_purple pdb_15">이메일 중복 제거</h4>
+                <form id="form_admin" class="br15 bg_white">
+                    <div class="form_input dpib">
+                        <label>기존 이메일</label>
+                        <input name="keyword" type="text" placeholder="기존이메일을 입력하세요" value="harimcha@naver.com, q0163020@naver.com, crazy_yuri@naver.com, a1632@naver.com, mi_sun_love@naver.com">
+                    </div>
+                    <div class="form_input dpib">
+                        <label>신규 이메일</label>
+                        <input name="number" type="text" placeholder="중복확인을 하고 싶은 신규이메일을 입력하세요" value="harimcha@naver.com, q0163020@naver.com, crazy_yuri@naver.com, a1632@naver.com, mi_sun_love@naver.com, harimcha@naver.com, q0163020@naver.com">
+                    </div>
+                    <!--저장버튼-->
+                    <div class="button_wrap">
+                        <button class="button01" type="submit">중복 이메일 제거</button>
+                    </div>
+                    <!--//저장버튼-->
+                    <div class="form_input dpib">
+                        <label>중복 제거된 이메일</label>
+                        <input name="number" type="text" placeholder="중복확인을 하고 싶은 신규이메일을 입력하세요" value="harimcha@naver.com, q0163020@naver.com, crazy_yuri@naver.com, a1632@naver.com, mi_sun_love@naver.com">
+                    </div>
+                </form>
+                <h4 class="fc_purple pdb_15 space">쉼표 <i class="material-icons">arrow_forward</i> 띄어쓰기로 변경 </h4>
+                <form id="form_admin" class="br15 bg_white">
+                    <div class="form_input dpib">
+                        <label>쉼표로 구분 된 이메일</label>
+                        <input name="number" type="text" placeholder="쉼표로 구분 된 이메일을 입력하세요" value="harimcha@naver.com, q0163020@naver.com, crazy_yuri@naver.com, a1632@naver.com, mi_sun_love@naver.com">
+                    </div>
+                    <!--저장버튼-->
+                    <div class="button_wrap">
+                        <button class="button01" type="submit">띄어쓰기로 변경하기</button>
+                    </div>
+                    <!--//저장버튼-->
+                    <div class="form_input dpib">
+                        <label>띄어쓰기로 변경 된 이메일</label>
+                        <input name="number" type="text" placeholder="쉼표로 구분 된 이메일을 입력하세요" value="harimcha@naver.com q0163020@naver.com crazy_yuri@naver.com a1632@naver.com mi_sun_love@naver.com">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--//content-->
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <span class="fc_white">회사</span> 진격의 형제들<span class="bar">|</span><span class="fc_white">대표자</span> 손윤호<br />
+            <span class="fc_white">주소</span> 부산광역시 남구 전포대로 133, 3617호<br />
+            <span class="fc_white">사업자등록번호</span> 409-69-00335<br />
+            <span class="fc_white">고객센터</span> 1544-7409<span class="bar">|</span><span class="fc_white">이메일 문의</span> viewhada@naver.com<br />
+            <span class="fc_white">뷰하다</span> www.viewhada.com
+        </div>
+    </footer>
+    <!--//footer-->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

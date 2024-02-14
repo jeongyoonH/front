@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+/***********************************************
+메인
+***********************************************/
+.main_content {text-align: center; padding: 120px 0;}
+.main_content img {height: 370px;}
+.main_content h1 {padding-top: 50px; padding-bottom: 10px;}
+
+
+/***********************************************
+아이디/비밀번호찾기
+***********************************************/
+#login_search {font-size: 0;}
+#login_search  > div {vertical-align: top; display: inline-block;}
+#login_search form {padding-top: 20px; text-align: center;}
+#login_search form input {width: 100%; margin: 5px 0;}
+#login_search form .button_wrap {margin-top: 20px;}
+#login_search form input[type="button"] {width: 160px; padding: 0 20px; height: 40px; border-radius: 10px; display: inline-block; font-size: 14px; margin: 20px auto 0 auto; background: #564A9C; color: #fff; cursor: pointer;}
+
+
+/***********************************************
+마이페이지
+***********************************************/
+#mypage {font-size: 0;}
+#mypage > div {vertical-align: top; display: inline-block;}
+#mypage p.sub {font-size: 14px; padding-top: 5px;}
+#mypage form {padding-top: 20px;}
+#mypage form .form_input {margin: 5px 0; display: inline-block; width: 100%;}
+#mypage form label {width: 60px; font-size: 14px; text-align: left; display: inline-block; color: #222; vertical-align: middle;} 
+#mypage form input {width: calc(100% - 60px);}
+#mypage form#password label {width: 110px;}
+#mypage form#password input {width: calc(100% - 110px);}
+#mypage form input[type="submit"] {width: 160px !important; padding: 0 20px; height: 40px; border-radius: 10px; display: inline-block; font-size: 14px; margin: 20px auto 0 auto; background: #564A9C; color: #fff; cursor: pointer;}
+#mypage form input.default {background: #eee; text-align: center;}
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>파일리스트</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.ico" />
+<link rel="icon" href="images/common/favicon.png">
+<link rel="stylesheet" type="text/css" href="style/base.css" media="all">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="content">
+		<div class="row">
+			<div class="title">
+				1. 디렉토리 구조
+			</div>
+
+
+			<p>
+			</p>
+
+			<div class="cont-100">
+
+				<table class="list">
+					<colgroup>
+						<col style="width:5%">
+						<col style="width:17%">
+						<col style="width:17%">
+						<col style="width:17%">
+						<col style="width:20%">
+					</colgroup>
+					<thead>
+					<tr>
+						<th>no</th>
+						<th>1st</th>
+						<th>2st</th>
+						<th>3st</th>
+						<th>4st</th>
+						<th>설명</th>
+
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>1</td>
+						<td>main/</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>가이드 파일이 위치한 폴더</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="index.html" target="_blank" style="color:dodgerblue;">index.html</a></td>
+						<td></td>
+						<td></td>
+						<td>가이드 파일의 index파일</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>js/</td>
+						<td></td>
+						<td></td>
+						<td>가이드 파일의 js</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>style/</td>
+						<td></td>
+						<td></td>
+						<td>가이드 파일의 style</td>
+					</tr>
+
+
+					<tr>
+						<td>2</td>
+						<td>mrdoochi/</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="../mrdoochi/index.html" style="color:dodgerblue;" target="_blank">index.html</a></td>
+						<td></td>
+						<td></td>
+						<td>마케팅 솔루션 퍼블리싱</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>v3/</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="../v3/index.html" style="color:dodgerblue;" target="_blank">index.html</a></td>
+						<td></td>
+						<td></td>
+						<td>-</td>
+					</tr>
+
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="title">
+				  2. 기본 폴더
+			</div>
+				<div class="cont-100">
+
+				<table class="list">
+				<colgroup>
+					<col style="width:40%">
+					<col style="width:20%">
+				</colgroup>
+				<thead>
+				<tr>
+				<th>폴더</th>
+				<th>설명</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>css</td>
+					<td>css파일 포함한 css파일(bootstrap 포함)</td>
+				</tr>
+				<tr>
+					<td>js</td>
+					<td>모든 js 파일</td>
+				</tr>
+				<tr>
+					<td>images</td>
+					<td>공통 이미지 파일 분류</td>
+				</tr>
+				<tr>
+				<td>html</td>
+				<td>html 파일</td>
+				</tr>
+
+				</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="title">
+			  2. 스타일 가이드
+			</div>
+			
+				
+			<p>
+			 한 페이지에 작성되는 컨테이너 구조는 아래와 같습니다 
+			</p>
+			<div class="container" style="display: block; position:relative; padding:4px; width: 900; height: 500px; border: solid 1px; background-color: #b8c6d1">
+				&lt;body&gt;
+
+				<div class="content row" style=" border: solid 1px; padding: 8px; background-color:#cfdae3;">
+					&lt;container&gt;
+							
+					<div class="content" style="width: 300; height: 180px; border: solid 1px; padding: 8px; background-color: #f1f8fd">
+						&lt;content&gt;
+						<div class="content" style="width: 200; height: 100px; border: solid 1px; padding: 8px; background-color: #ffffff">
+							&lt;row&gt;
+							<div style="width: 50; height: 20px; border: solid 1px; padding: 8px; margin-bottom:4px;">
+								&lt;title&gt;
+							</div>
+							<div style="width: 50; height: 20px; border: solid 1px; padding: 8px; ">
+								&lt;cont-n&gt;
+							</div>
+						</div>
+					</div>
+					
+							
+					<div  class="content"  style="width: 480; height: 180px; border: solid 1px; padding: 8px; background-color: #f1f8fd">
+						&lt;content&gt;
+						<div class="content" style="width: 200; height: 100px; border: solid 1px; padding: 8px; background-color: #ffffff;">
+						&lt;row&gt;
+							<div style="width: 50; height: 20px; border: solid 1px; padding: 8px; margin-bottom:4px;">
+								&lt;title&gt;
+							</div>
+							<div style="width: 50; height: 20px; border: solid 1px; padding: 8px; ">
+								&lt;cont-n&gt;
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	
+
+</div>
+
+</body>
+</html>

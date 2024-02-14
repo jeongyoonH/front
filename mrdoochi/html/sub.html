@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0, minimum-scale=1.0,user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="mr.doochi" />
+    <meta name="author" content="mr.doochi" />
+    <meta name="keywords" content="mr.doochi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="mr.doochi" />
+    <meta property="og:url" content="http://www.mrdoochi.com/" />
+    <meta name="description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    
+    <title>mr.doochi</title>
+    
+    <link rel= "stylesheet" type="text/css" href="../css/basic.css">
+    <link rel= "stylesheet" type="text/css" href="../css/layout.css">
+    <link rel= "stylesheet" type="text/css" href="../css/main.css">
+    <link rel= "stylesheet" type="text/css" href="../css/content.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    
+</head>
+<body>
+    <!--header-->
+    <header class="bg_white login">
+        <div class="container cf">
+            <h1 class="left"><a href="../index.html" class="dpib"><img src="../images/layout/header_logo.png" alt="미스터두치 로고"></a></h1>
+            <div class="right">
+                <div class="ientity">
+                <a href="#none"><img src="../images/layout/login_ico.png" alt="계정이미지">hongildong 님</a>
+                </div>
+                <a href="#none" class="button">로그아웃</a>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-->
+    <div class="container pd_container">
+        <!--광고주 이름 검색-->
+        <div class="search_section">
+            <input type="text" class="form_search" placeholder="이름으로 검색하세요" value="">
+        </div>
+        <!--//광고주 이름 검색-->
+        <!--광고주 목록 필터-->
+        <div class="filter cf">
+            <div class="left">
+                <div class="filter_select dpib">
+                    <select class="border br10 bg_white fs14">
+                        <option value="">등록 날짜 오름차순</option>
+                        <option value="">등록 날짜 내림차순</option>
+                        <option value="">가나다 순</option>
+                    </select>
+                </div>
+                <div class="filter_category dpib">
+                    <ul>
+                        <li class="on dpib hand">전체 <span>20</span></li>
+                        <li class="dpib hand">수집중 <span>0</span></li>
+                        <li class="dpib hand">수집완료 <span>20</span></li>
+                        <li class="dpib hand">영업중 <span>0</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="filter_count dpib">
+                    <select class="border br10 bg_white fs14">
+                        <option value="">10개씩 보기</option>
+                        <option value="">30개씩 보기</option>
+                        <option value="">50개씩 보기</option>
+                    </select>
+                </div>
+                <div class="add_company dpib">
+                    <button class="btn_lg bg_purple br10">
+                        <a href="../html/sub1_1.html">
+                            <span>광고주 추가</span><i class="material-icons">add</i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--//광고주 목록 필터-->
+        <!--광고주 목록-->
+        <div class="company_list">
+            <ul>
+                <!--광고주 목록 : 협의중-->
+                <li class="consult cf pd_box01 br15">
+                    <div class="state">협의중</div>
+                    <div class="info left">
+                        <h3>속닭속닭 <a class="clear_round bg_red hand"><i class="material-icons">clear</i></a></h3>
+                        <p class="adr fs14">경상남도 김해시 인제로 210번길 57 속닥속닭</p>
+                        <div class="desc fs14"><span class="fc_black fwm">등록날짜</span> 2021.01.31</div>
+                        <div class="tag">
+                            <span>김해 닭발</span>
+                            <span>삼방동 닭발</span>
+                        </div>
+                    </div>
+                    <div class="link_button right">
+                        <ul>
+                            <li class="btn_mg on dpib"><a href="#none">상황 분석</a></li>
+                            <li class="btn_mg on dpib"><a href="../html/sub3_1.html">마케팅 정보</a></li>
+                            <li class="btn_mg off dpib"><a href="#none">마케팅 관리</a></li>
+                            <li class="btn_mg off dpib"><a href="#none">실시간 대시보드</a></li>
+                            <li class="btn_mg off dpib"><a href="#none">명단 관리</a></li>
+                            <li class="btn_mg off dpib"><a href="#none">완료 보고서</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--//광고주 목록 : 협의중-->
+                <!--광고주 목록 : 진행중-->
+                <li class="progress cf pd_box01 br15">
+                    <div class="state">진행중</div>
+                    <div class="cf">
+                        <div class="info left">
+                            <h3>합천일류돼지국밥 <a class="clear_round bg_red hand"><i class="material-icons">clear</i></a></h3>
+                            <p class="adr fs14">부산광역시 사상구 광장로 34 윌로펌프</p>
+                            <div class="desc fs14">
+                                <span class="fc_black fwm">등록날짜</span> 2021.01.31 <span class="bar"></span> <span class="fc_black fwm">마케팅 날짜</span> 2021.01.31 ~ 2021.03.02 <span class="bar"></span> <span class="fc_black fwm">광고주 이름</span> 홍길동 <span class="bar"></span> <span class="fc_black fwm">광고주 연락처</span> 010-1234-5678
+                            </div>
+                            <div class="tag">
+                                <span>부산 돼지국밥</span>
+                                <span>사상구 돼지국밥</span>
+                                <span>괘법동 돼지국밥</span>
+                            </div>
+                        </div>
+                        <div class="link_button right">
+                            <ul>
+                                <li class="btn_mg on dpib"><a href="#none">상황 분석</a></li>
+                                <li class="btn_mg on dpib"><a href="#none">마케팅 정보</a></li>
+                                <li class="btn_mg on dpib"><a href="#none">마케팅 관리</a></li>
+                                <li class="btn_mg on dpib"><a href="#none">실시간 대시보드</a></li>
+                                <li class="btn_mg on dpib"><a href="#none">명단 관리</a></li>
+                                <li class="btn_mg on dpib"><a href="#none">완료 보고서</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="moniter border_t">
+                        <ul>
+                            <li>
+                                <div class="border br10">
+                                    <p class="num fc_green fwb">20</p><p class="title">총 포스팅 수</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="border br10">
+                                    <p class="num fc_green fwb">13</p><p class="title">진행 포스팅 수</p>    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="border br10">
+                                    <p class="num fc_green fwb">3</p><p class="title">신규 포스팅 수</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="border br10">
+                                    <p class="num fc_green fwb">4</p><p class="title">예정 포스팅 수</p>
+                                </div>
+                            </li>
+                            <li class="moniter_button">
+                                <a href="#none" class="bg_green br10"><i class="material-icons">cast</i><p class="title">모니터링</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--//광고주 목록 : 진행중-->
+                <!--광고주 목록 : 진행완료-->
+                <li class="complete cf pd_box01 br15">
+                    <div class="state">진행완료</div>
+                    <div class="info left">
+                        <h3>던벼락막창 <a class="clear_round bg_red hand"><i class="material-icons">clear</i></a></h3>
+                        <p class="adr fs14">경상남도 김해시 인제로 210번길 57 속닥속닭</p>
+                        <div class="desc fs14">
+                            <span class="fc_black fwm">등록날짜</span> 2021.01.31 <span class="bar"></span> <span class="fc_black fwm">마케팅 날짜</span> 2021.01.31 ~ 2021.03.02 <span class="bar"></span> <span class="fc_black fwm">광고주 이름</span> 홍길동 <span class="bar"></span> <span class="fc_black fwm">광고주 연락처</span> 010-1234-5678
+                        </div>
+                        <div class="tag">
+                            <span>부산 서면막창</span>
+                            <span>서면막창맛집</span>
+                            <span>막창집</span>
+                        </div>
+                    </div>
+                    <div class="link_button right">
+                        <ul>
+                            <li class="btn_mg off dpib"><a href="#none">상황 분석</a></li>
+                            <li class="btn_mg off dpib"><a href="#none">마케팅 정보</a></li>
+                            <li class="btn_mg off dpib"><a href="#none">마케팅 관리</a></li>
+                            <li class="btn_mg on dpib"><a href="#none">실시간 대시보드</a></li>
+                            <li class="btn_mg on dpib"><a href="#none">명단 관리</a></li>
+                            <li class="btn_mg on dpib"><a href="#none">완료 보고서</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--//광고주 목록 : 진행완료-->
+            </ul>
+        </div>
+        <!--//광고주 목록-->
+        <!--페이징-->
+        <div class="pagination">
+			<ul class="pagenum">
+				<li><a href="#none" class="btn_direction"><i class="material-icons">keyboard_arrow_left</i></a></li>
+				<li><a href="#none" title="1페이지로 이동합니다." class="page-numbers on">1</a></li>
+				<li><a href="#none" title="2페이지로 이동합니다." class="page-numbers">2</a></li>
+				<li><a href="#none" title="3페이지로 이동합니다." class="page-numbers">3</a></li>
+				<li><a href="#none" class="btn_direction"><i class="material-icons">keyboard_arrow_right</i></a></li>
+			</ul>
+		</div>
+        <!--//페이징-->
+    </div>
+    <!--//content-->
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <span class="fc_white">회사</span> (회사이름)<span class="bar">|</span><span class="fc_white">대표자</span> 손윤호<br />
+            <span class="fc_white">주소</span> 부산광역시 xx xxxx, xxxx호<br />
+            <span class="fc_white">사업자등록번호</span> xxx-xx-xxxx<br />
+            <span class="fc_white">고객센터</span> xxxx-xxxx<span class="bar">|</span><span class="fc_white">이메일 문의</span> viewhada@naver.com<br />
+            <span class="fc_white">xxx</span> www.xxxxxxxx.com
+        </div>
+    </footer>
+    <!--//footer-->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
